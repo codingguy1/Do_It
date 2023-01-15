@@ -61,6 +61,7 @@ body{
 	border:0.5px solid rgba(245.00000059604645, 245.00000059604645, 245.00000059604645, 1);
 }
 .e12_15 { 
+	font-size: large;
 	color:rgba(255, 255, 255, 1);
 	width:258px;
 	height:69px;
@@ -68,7 +69,6 @@ body{
 	left:110px;
 	top:22px;
 	text-align:left;
-	font-size:Symbol(figma.mixed)px;
 	letter-spacing:0;
 }
 .e12_19 { 
@@ -109,7 +109,8 @@ body{
 	letter-spacing:0;
 }
 .e15_23 { 
-	background-color:rgba(138.1250050663948, 138.1250050663948, 138.1250050663948, 1);
+	
+	background-color:rgba(96.68749898672104, 96.68749898672104, 96.68749898672104, 1);
 	width:254px;
 	height:70px;
 	position:absolute;
@@ -119,6 +120,11 @@ body{
 	border-top-right-radius:20px;
 	border-bottom-left-radius:20px;
 	border-bottom-right-radius:20px;
+	font-family:Poppins;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+	color: white;
 }
 .e15_25 { 
 	background-color:rgba(76.0000030696392, 194.00000363588333, 196.00000351667404, 1);
@@ -182,15 +188,20 @@ body{
 }
 .e15_45 { 
 	background-color:rgba(96.68749898672104, 96.68749898672104, 96.68749898672104, 1);
-	width:256px;
+	width:254px;
 	height:70px;
 	position:absolute;
-	left:37px;
-	top:212px;
+	left:39px;
+	top:124px;
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	border-bottom-left-radius:20px;
 	border-bottom-right-radius:20px;
+	font-family:Poppins;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+	color: white;
 }
 .e20_116 { 
 	width:178px;
