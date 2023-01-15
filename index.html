@@ -1,79 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="styles.css">
-    <title>Do It</title>
-</head>
-<body>
-    <div class=e4_2>
-        <div class="e11_14"></div>
-        <div class="e20_120"></div><span  class="e12_15">Just do it</span>
-        <div class=e12_19>
-          <div class="e12_20"></div>
-          <div class="e12_21"></div>
-        </div><span  class="e13_22">Sign in | Sign up</span>
-        <button class="e15_23">Pomodoro</button>
-        <div class="e15_25"></div><span  class="e15_24"></span><span  class="e20_102">Tasks</span>
-        <div class=e15_27>
-          <div class="e15_28"></div>
-          <div class="e15_29"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Pomodoro Clock</h1>
+    <main class="app">
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <div class="button-group mode-buttons" id="js-mode-buttons">
+          <button
+            data-mode="pomodoro"
+            class="button active mode-button"
+            id="js-pomodoro"
+          >
+            Pomodoro
+          </button>
+          <button
+            data-mode="shortBreak"
+            class="button mode-button"
+            id="js-short-break"
+          >
+            Short break
+          </button>
+          <button
+            data-mode="longBreak"
+            class="button mode-button"
+            id="js-long-break"
+          >
+            Long break
+          </button>
         </div>
-        <div class=e20_116>
-          <div class=e20_117>
-            <div class="e20_103"></div>
-          </div>
+        <div class="clock" id="js-clock">
+          <span id="js-minutes">25</span>
+          <span class="separator">:</span>
+          <span id="js-seconds">00</span>
         </div>
-        <div class="e15_31"></div><button  class="e15_32">Completed </button><span  class="e20_108">Add a task</span><span  class="e20_112">Write psychology paper </span><span  class="e20_125">Research on topic</span><span  class="e20_126">Rough draft </span><span  class="e20_127">Edit</span>
-        <div class="e15_37"></div>
-        <div class="e15_38"></div>
-        <div class="e15_58"></div>
-        <div class="e15_59"></div>
-        <div class="e15_60"></div><span  class="e15_61">Blocked sites</span>
-        <div class=e16_68>
-          <div class="e16_69"></div>
-          <div class="e16_70"></div>
-        </div>
-        <div class="e18_83"></div>
-        <div class="e20_129"></div>
-        <div class="e18_73"></div><span  class="e18_74">Progress</span>
-        <div class=e18_78>
-          <div class="e18_79"></div>
-          <div class="e18_80"></div>
-          <div class="e18_81"></div>
-          <div class="e18_82"></div>
-        </div>
-        <div class="e18_86"></div>
-        <div class="e18_87"></div><span  class="e18_88">Calendar </span>
-        <div class=e19_94>
-          <div class="e19_95"></div>
-          <div class="e19_96"></div>
-          <div class="e19_97"></div>
-        </div>
-        <div class=e20_104>
-          <div class=e20_105>
-            <div class="e20_106"></div>
-          </div>
-          <div class="e20_107"></div>
-        </div>
-        <div class="e20_111"></div>
-        <div class="e20_122"></div>
-        <div class="e20_279"></div>
-        <div class=e20_113>
-          <div class="e20_114"></div>
-          <div class="e20_115"></div>
-        </div><span  class="e20_121">6 hrs</span>
-        <div class=e20_118>
-          <div class="e20_119"></div>
-        </div>
-        <div class="e20_123"></div>
-        <div class="e20_124"></div><span  class="e20_128">1hr 30min</span><span  class="e20_277">3hrs 30min</span><span  class="e20_278">1hr</span><span  class="e20_280">25</span><span  class="e20_282">5</span><span  class="e20_287">3</span><span  class="e20_281">MIN</span><span  class="e20_285">MIN BREAK</span><span  class="e20_288">CYCLES</span>
-        <div class=e20_283>
-          <div class="e20_284"></div>
-        </div>
+        <button class="main-button" data-action="start" id="js-btn">
+          Start
+        </button>
       </div>
-</body>
+    </main>
+    <div class="hidden">
+      <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+      <audio src="break.mp3" data-sound="shortBreak"></audio>
+      <audio src="break.mp3" data-sound="longBreak"></audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
-
