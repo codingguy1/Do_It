@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box;
+  width:600px
+  
+}
+h2{
+  
 }
 
 /* Remove margins and padding from the list */
@@ -64,13 +69,13 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f44336;
+  background-color: #f26e1e;
   color: white;
 }
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  background-color: #f26e1e;
   padding: 30px 40px;
   color: white;
   text-align: center;

@@ -5,7 +5,7 @@
     "description" : "Productivity Supercharger",
     "author": "John Sarga",
     "action": {
-        "default_popup": "index.html",
+        "default_popup": "Home.html",
         "default_title": "Do it"
     },
     "icons":{
